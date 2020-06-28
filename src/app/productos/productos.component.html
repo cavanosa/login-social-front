@@ -1,0 +1,17 @@
+<app-menu></app-menu>
+<div class="container">
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let producto of productos">
+            <td>{{producto.nombre}}</td>
+            <td>{{producto.precio}}€</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

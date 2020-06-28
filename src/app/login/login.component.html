@@ -1,0 +1,18 @@
+<app-menu></app-menu>
+<div class="container" *ngIf="!isLogged">
+  <div class="row m-3">
+    <div class="col-md-6 mx-auto">
+      <div class="card">
+        <div class="card-header text-center">
+          Inicio de Sesión
+        </div>
+        <div class="card-body">
+          <button class="btn btn-outline-danger btn-lg btn-block" (click)="signInWithGoogle()">
+            <i class="fab fa-google"></i> Iniciar Sesión con Google</button>
+          <button class="btn btn-outline-primary btn-lg btn-block" (click)="signInWithFB()">
+            <i class="fab fa-facebook"></i> Iniciar Sesión con Facebook</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
